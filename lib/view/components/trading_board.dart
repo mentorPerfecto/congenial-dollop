@@ -150,7 +150,7 @@ class ButtonsCard extends StatelessWidget {
         context: context,
         shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(top: Radius.circular(16.0))),
-        backgroundColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Theme.of(context).colorScheme.surface,
         isScrollControlled: true,
         builder: (BuildContext bc) {
           return FractionallySizedBox(

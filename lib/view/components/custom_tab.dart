@@ -33,7 +33,7 @@ class CustomTab extends ConsumerWidget {
                     : EdgeInsets.zero,
                 indicator: BoxDecoration(
                     color: themeMode == ThemeMode.dark
-                        ? Theme.of(context).colorScheme.background
+                        ? Theme.of(context).colorScheme.surface
                         : Theme.of(context).primaryColor,
                     borderRadius: BorderRadius.circular(8.0),
                     border: borderColor != null

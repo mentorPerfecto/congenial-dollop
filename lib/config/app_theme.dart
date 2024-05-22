@@ -19,7 +19,7 @@ class AppTheme {
       colorScheme: const ColorScheme.light(
           secondary: AppColors.lightSecondaryColor,
           primary: AppColors.lightSecondaryColor,
-          background: AppColors.lightBackgroundColor,
+          surface: AppColors.lightBackgroundColor,
           brightness: Brightness.light),
       checkboxTheme: ThemeData.light().checkboxTheme.copyWith(
             shape:
@@ -50,7 +50,7 @@ class AppTheme {
       colorScheme: const ColorScheme.dark(
           secondary: AppColors.darkSecondaryColor,
           primary: AppColors.darkSecondaryColor,
-          background: AppColors.darkBackgroundColor,
+          surface: AppColors.darkBackgroundColor,
           brightness: Brightness.dark),
       checkboxTheme: ThemeData.dark().checkboxTheme.copyWith(
             shape:
