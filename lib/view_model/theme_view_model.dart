@@ -4,8 +4,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'base_view_model.dart';
 
-
-
 final themeViewModel = ChangeNotifierProvider((ref) => ThemeConfig());
 
 class ThemeConfig extends BaseViewModel {

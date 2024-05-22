@@ -1,4 +1,3 @@
-
 import 'package:accessment/config/app_theme.dart';
 import 'package:accessment/src/config.dart';
 import 'package:accessment/view/screens/splash_screen.dart';
@@ -7,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,4 +1,3 @@
-
 import 'package:accessment/src/models.dart';
 import 'package:accessment/src/packages.dart';
 import 'package:intl/intl.dart';
@@ -99,6 +98,7 @@ class UtilFunctions {
       maxWidth: 600,
     );
   }
+
   static Future<XFile?> takePhoto() async {
     return ImagePicker().pickImage(
       source: ImageSource.camera,

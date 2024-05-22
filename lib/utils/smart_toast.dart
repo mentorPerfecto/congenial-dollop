@@ -6,7 +6,6 @@ void showToast({
   required bool isError,
   bool isNeutralMessage = false,
 }) {
-
   BotToast.showSimpleNotification(
     title: msg,
     borderRadius: 10.0,

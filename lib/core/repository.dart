@@ -6,7 +6,6 @@ import 'package:candlesticks/candlesticks.dart';
 import 'package:http/http.dart' as http;
 import 'package:web_socket_channel/web_socket_channel.dart';
 
-
 class Repository {
   Future<List<Candle>> fetchCandles(
       {required String symbol, required String interval, int? endTime}) async {

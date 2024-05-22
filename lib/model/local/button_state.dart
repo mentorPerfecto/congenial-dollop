@@ -1,4 +1,3 @@
-
 import 'package:accessment/src/utils.dart';
 
 class CustomButtonState {

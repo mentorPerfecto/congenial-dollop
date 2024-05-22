@@ -1,3 +1,1 @@
-
-class ResponseData {
-}
+class ResponseData {}

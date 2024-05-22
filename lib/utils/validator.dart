@@ -147,8 +147,9 @@ class Validators {
     return null;
   }
 
-  String? validateShippingAdrress({String? street,String? city, String? state, String? postCode}) {
-    if (street == '' || city == '' || state == '' || postCode == '' ) {
+  String? validateShippingAdrress(
+      {String? street, String? city, String? state, String? postCode}) {
+    if (street == '' || city == '' || state == '' || postCode == '') {
       return 'Invalid Address, please select a valid\nCompany address';
     }
     return null;
@@ -182,7 +183,6 @@ class FieldValidator {
     }
     return null;
   }
-
 }
 
 /// validation for cards visa or master

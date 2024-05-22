@@ -8,16 +8,9 @@ enum ButtonState {
   disabled,
 }
 
+enum ViewState { idle, loading, processing, success, failed }
 
-enum ViewState { idle,
-  loading,
-  processing,
-  success, failed }
-
-enum ImageType { svg,
-  network,
-  asset,
-  file }
+enum ImageType { svg, network, asset, file }
 
 //
 // enum WalletAction {

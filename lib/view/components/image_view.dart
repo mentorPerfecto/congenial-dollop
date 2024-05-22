@@ -6,7 +6,6 @@ import 'package:flutter_svg/svg.dart';
 
 import '../../config/app_images.dart';
 
-
 class ImageView extends StatelessWidget {
   final String? url;
   final String? placeholder;

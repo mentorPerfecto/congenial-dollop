@@ -9,13 +9,9 @@ import 'package:web_socket_channel/web_socket_channel.dart';
 
 import 'base_view_model.dart';
 
-
-
 final homeViewModel = ChangeNotifierProvider((ref) => ViewModel());
 
-
 class ViewModel extends BaseViewModel {
-
   // static final _instance = ViewModel._();
   // static ViewModel get instance => _instance;
 
@@ -186,8 +182,7 @@ class ViewModel extends BaseViewModel {
   }
 
   /// changed from Stream
-  Object get socketStream =>
-      _channel ?? _channel!.stream;
+  Object get socketStream => _channel ?? _channel!.stream;
 
   List<String> get intervals => _intervals;
   String get currentInterval => _currentInterval;

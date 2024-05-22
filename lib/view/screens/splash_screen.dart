@@ -6,7 +6,6 @@ import 'package:accessment/src/screens.dart';
 import 'package:accessment/src/utils.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-
 import '../../config/app_images.dart';
 
 class SplashScreen extends ConsumerStatefulWidget {
@@ -16,7 +15,6 @@ class SplashScreen extends ConsumerStatefulWidget {
 }
 
 class _SplashScreenState extends ConsumerState<SplashScreen> {
-
   startTimeout() => Timer(const Duration(seconds: 1), handleTimeout);
 
   void handleTimeout() => changeScreen();
@@ -39,7 +37,8 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
     return Container(
       decoration: BoxDecoration(color: Theme.of(context).canvasColor),
       child: Center(
-          child: ImageView.svg(AppImages.icLogo, color: Theme.of(context).iconTheme.color,
+          child: ImageView.svg(AppImages.icLogo,
+              color: Theme.of(context).iconTheme.color,
               width: 150.sp,
               fit: BoxFit.fitWidth)),
     );

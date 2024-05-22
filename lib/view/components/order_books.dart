@@ -92,8 +92,7 @@ class _OrderBooksState extends ConsumerState<OrderBooks> {
                                               .bodySmall!
                                               .color)));
                             }).toList(),
-                            onChanged: (value) =>
-                                provider.setLimit(value!)))
+                            onChanged: (value) => provider.setLimit(value!)))
                   ],
                 ),
               ),

@@ -54,7 +54,7 @@ class ChartView extends ConsumerWidget {
   const ChartView({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref ) {
+  Widget build(BuildContext context, WidgetRef ref) {
     var provider = ref.watch(homeViewModel);
     return ListenableBuilder(
       listenable: provider,
