@@ -1,5 +1,6 @@
 class ApiConstants {
-  static String establishConnectionUrl = "wss://stream.binance.com:9443/ws";
+ // static String establishConnectionUrl = "wss://fstream.binance.com:9443/ws";
+ static String establishConnectionUrl = "wss://testnet.binance.vision/ws";
   static String symbolsUrl = "https://api.binance.com/api/v3/ticker/price";
   static String symbolUrl(String symbol) =>
       "https://api.binance.com/api/v3/ticker/24hr?symbol=$symbol";

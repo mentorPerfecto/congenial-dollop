@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:accessment/core/repository.dart';
 import 'package:accessment/src/models.dart';
@@ -61,6 +62,7 @@ class ViewModel extends BaseViewModel {
   }
 
   Future<void> fetchSymbols() async {
+
     try {
       final tickers = await _repository.fetchSymbols();
       _tickers = tickers;
@@ -136,7 +138,7 @@ class ViewModel extends BaseViewModel {
     if (_channel != null) {
       _channel!.stream.listen(
         (message) {
-          //log(name: 'Incoming', message);
+          log(name: 'Incoming', message);
           final map = jsonDecode(message) as Map<String, dynamic>;
           if (map['e'] == 'depthUpdate') {
             if (_orderBook == null) return;
@@ -163,15 +165,18 @@ class ViewModel extends BaseViewModel {
               _candles.insert(0, candleTicker.candle);
             }
           }
+          notifyListeners();
           setViewState(ViewState.idle);
         },
         onDone: () => _closeSocketConnection(),
         onError: (error) {
+          log(error.toString());
           // Handle WebSocket errors
           return;
         },
       );
     }
+    notifyListeners();
   }
 
   void _closeSocketConnection() {

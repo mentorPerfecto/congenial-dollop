@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:accessment/repository/network/api_constants.dart';
 import 'package:accessment/src/models.dart';
@@ -48,6 +49,7 @@ class Repository {
 
   WebSocketChannel establishConnection(
       String symbol, String interval, int limit) {
+    log(ApiConstants.establishConnectionUrl);
     final channel = WebSocketChannel.connect(
       Uri.parse(ApiConstants.establishConnectionUrl),
     );
@@ -69,6 +71,7 @@ class Repository {
         },
       ),
     );
+
     return channel;
   }
 }
