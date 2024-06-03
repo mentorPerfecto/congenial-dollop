@@ -138,7 +138,7 @@ class ViewModel extends BaseViewModel {
     if (_channel != null) {
       _channel!.stream.listen(
         (message) {
-          log(name: 'Incoming', message);
+         // log(name: 'Incoming', message);
           final map = jsonDecode(message) as Map<String, dynamic>;
           if (map['e'] == 'depthUpdate') {
             if (_orderBook == null) return;
